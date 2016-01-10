@@ -16,6 +16,8 @@ float Temperature::Read()
    float temperature = (voltage - .5) * 100;
 
    log(sensorVal,voltage,temperature);
+
+   return temperature;
 }
 
 int Temperature::GetBaseLineTemp()

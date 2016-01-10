@@ -11,7 +11,11 @@ void setup(){
 }
 
 void loop(){
-   int temperature = t.Read();
+   float temperature = t.Read();
+
+   Serial.print(temperature);
+   Serial.print(t.GetBaseLineTemp());
+
 
   // if the current temperature is lower than the baseline
   // turn off all LEDs
